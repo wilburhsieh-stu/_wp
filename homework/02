@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>綜合表單範例</title>
+<style>
+  /* 基本頁面與字體設定 */
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  /* 表單容器的卡片設計 */
+  .form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    text-align: center;
+    color: #333333;
+  }
+
+  /* 標籤樣式 */
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555555;
+  }
+
+  /* 文字輸入框、下拉選單與文字區域樣式 */
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"], 
+  select, 
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* 確保 padding 不會影響總寬度 */
+    font-family: inherit;
+    resize: vertical; /* 允許垂直拉伸 textarea */
+  }
+
+  /* 單選按鈕與核取方塊的群組排版 */
+  .radio-group, .checkbox-group {
+    margin-top: 8px;
+  }
+
+  /* 覆蓋 display: block 讓單選/核取標籤橫向排列 */
+  .inline-label {
+    display: inline;
+    font-weight: normal;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+  /* 送出與重設按鈕樣式 */
+  .btn-group {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  input[type="submit"], 
+  input[type="reset"] {
+    width: 48%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    transition: background-color 0.3s;
+  }
+
+  input[type="submit"] {
+    background-color: #04AA6D; /* W3Schools 經典綠色 */
+  }
+
+  input[type="submit"]:hover {
+    background-color: #059862;
+  }
+
+  input[type="reset"] {
+    background-color: #f44336; /* 紅色警告色 */
+  }
+
+  input[type="reset"]:hover {
+    background-color: #da190b;
+  }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>使用者註冊與意見調查</h2>
+  
+  <!-- action 屬性指定表單資料送出的目的地，這裡用 # 作為示範 -->
+  <form action="#" method="post">
+    
+    <!-- 1. 文字與電子郵件輸入 (Text & Email Inputs) -->
+    <label for="username">帳號 (Username):</label>
+    <input type="text" id="username" name="username" placeholder="請輸入您的帳號" required>
+
+    <label for="pwd">密碼 (Password):</label>
+    <input type="password" id="pwd" name="pwd" placeholder="請輸入至少 8 位數密碼" required>
+
+    <label for="email">電子郵件 (Email):</label>
+    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+
+    <!-- 2. 單選按鈕 (Radio Buttons - 多選一) -->
+    <label>性別 (Gender):</label>
+    <div class="radio-group">
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male" class="inline-label">男</label>
+      
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female" class="inline-label">女</label>
+      
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other" class="inline-label">其他</label>
+    </div>
+
+    <!-- 3. 下拉選單 (Select Dropdown) -->
+    <label for="country">國家 / 地區 (Country):</label>
+    <select id="country" name="country">
+      <option value="taiwan">台灣</option>
+      <option value="japan">日本</option>
+      <option value="usa">美國</option>
+      <option value="europe">歐洲</option>
+      <option value="other">其他</option>
+    </select>
+
+    <!-- 4. 核取方塊 (Checkboxes - 可多選) -->
+    <label>您感興趣的領域 (Interests):</label>
+    <div class="checkbox-group">
+      <input type="checkbox" id="tech" name="interest" value="tech">
+      <label for="tech" class="inline-label">科技</label>
+      
+      <input type="checkbox" id="design" name="interest" value="design">
+      <label for="design" class="inline-label">設計</label>
+      
+      <input type="checkbox" id="business" name="interest" value="business">
+      <label for="business" class="inline-label">商業</label>
+    </div>
+
+    <!-- 5. 文字區域 (Textarea - 多行文字) -->
+    <label for="feedback">意見回饋 (Feedback):</label>
+    <textarea id="feedback" name="feedback" rows="4" placeholder="請告訴我們您的想法..."></textarea>
+
+    <!-- 6. 按鈕 (Buttons) -->
+    <div class="btn-group">
+      <input type="submit" value="送出表單">
+      <input type="reset" value="清除重填">
+    </div>
+
+  </form>
+</div>
+
+</body>
+</html>
