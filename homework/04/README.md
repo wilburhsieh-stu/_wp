@@ -24,6 +24,9 @@ console.log(result1);
 
 ```
 **測試結果：**
+
+---
+
 [ 10, 20, 30 ]
 
 ---
@@ -43,7 +46,11 @@ function countdown(n) {
 console.log(countdown(5));
 ```
 **測試結果：**
+
+---
+
 5, 4, 3, 2, 1, 0 ... Liftoff!
+
 ---
 
 ### 練習 3 — BMI 計算機 (function, if)
@@ -62,6 +69,9 @@ function calculateBMI(weight, height) {
 console.log(calculateBMI(65, 1.7));
 ```
 **測試結果：**
+
+---
+
 BMI: 22.5 (正常範圍)
 
 ---
@@ -80,6 +90,9 @@ const user = {
 console.log(user.getFullName());
 ```
 **測試結果：**
+
+---
+
 Alex Chen
 
 ---
@@ -99,6 +112,9 @@ const myCart = [{name: "奶茶", price: 60}, {name: "雞排", price: 90}];
 console.log("總金額:", getTotal(myCart));
 ```
 **測試結果：**
+
+---
+
 總金額: 150
 
 ---
@@ -115,6 +131,9 @@ const originalObj = JSON.parse(jsonStr);
 console.log("還原物件姓名:", originalObj.name);
 ```
 **測試結果：**
+
+---
+
 JSON 字串: {"name":"Gemini","hobbies":["AI","Coding"],"age":1}
 還原物件姓名: Gemini
 
@@ -137,6 +156,9 @@ const classA = [{name: "小明", score: 85}, {name: "小華", score: 70}, {name:
 console.log("優秀學生:", filterScores(classA));
 ```
 **測試結果：**
+
+---
+
 優秀學生: [ '小明', '小紅' ]
 
 ---
@@ -157,6 +179,9 @@ function reverseNumber(num) {
 console.log(reverseNumber(9876));
 ```
 **測試結果：**
+
+---
+
 6789
 
 ---
@@ -178,6 +203,9 @@ console.log("Alice 的電話:", searchPhone("Alice"));
 console.log("Eve 的電話:", searchPhone("Eve"));
 ```
 **測試結果：**
+
+---
+
 Alice 的電話: 0911
 Eve 的電話: 找不到此人
 
@@ -198,6 +226,9 @@ console.log(checkOrder("筆電", 3));
 console.log(checkOrder("滑鼠", 1));
 ```
 **測試結果：**
+
+---
+
 下單成功
 庫存不足
 ---
