@@ -1,6 +1,6 @@
 ## 習題 4 
 
-AI 問答 -- https://claude.ai/chat/30d46a16-edd1-4da0-8492-71c44c76ab07
+AI 問答 -- (https://gemini.google.com/app/4fcee2f7a12bc8d8?utm_source=app_launcher&utm_medium=owned&utm_campaign=base_all)
 
 
 
