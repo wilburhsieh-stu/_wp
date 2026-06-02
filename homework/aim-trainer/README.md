@@ -66,5 +66,3 @@ public/index.html：包含所有的 HTML 架構、CSS 樣式設計與前端遊�
 本專案為網頁全端互動與 API 串接練習之開源作品，僅供學習與交流使用。
 
 開發者：謝秉潾 (Bing-Lin Xie)
-
----
