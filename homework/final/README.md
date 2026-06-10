@@ -1,6 +1,6 @@
-# 網頁設計期末作業 (Web Design Final Project)
+# WP期末作業總攬
 
-本專案包含了網頁設計課程的期末作業與實作練習，內容涵蓋從基礎的前端網頁切版 (HTML/CSS)、JavaScript 核心邏輯，一直到後端 Node.js (Express 框架) 的基礎伺服器架設。
+本專案包含了網頁設計課程的作業與實作練習，內容涵蓋從基礎的前端網頁切版 (HTML/CSS)、JavaScript 核心邏輯，一直到後端 Node.js (Express 框架) 的基礎伺服器架設。
 
 ## 📂 專案目錄結構與說明
 
